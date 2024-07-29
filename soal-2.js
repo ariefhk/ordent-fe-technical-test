@@ -21,4 +21,4 @@ function remainderOfTwoNum(num1, num2) {
 console.log(remainderOfTwoNum(17, 5)); // 2
 console.log(remainderOfTwoNum(13, 72)); // 7
 console.log(remainderOfTwoNum(0, -1)); // 0
-console.log(remainderOfTwoNum(1, 0)); // handle with js so it return 0
+console.log(remainderOfTwoNum(1, 0)); // handle with js so it return error
