@@ -4,6 +4,11 @@ function remainderOfTwoNum(num1, num2) {
     throw new Error("Invalid type must be a number!");
   }
 
+  // Handle if num1 and num2 is zero
+  if (num1 === 0 && num2 === 0) {
+    throw new Error("num1 and num2 must not be zero!");
+  }
+
   // if num1 is greater than num2, return the remainder of num1 divided by num2
   if (num1 > num2) {
     // Handle division by zero by throw an error
@@ -21,4 +26,5 @@ function remainderOfTwoNum(num1, num2) {
 console.log(remainderOfTwoNum(17, 5)); // 2
 console.log(remainderOfTwoNum(13, 72)); // 7
 console.log(remainderOfTwoNum(0, -1)); // 0
+console.log(remainderOfTwoNum(0, 0)); // 0
 console.log(remainderOfTwoNum(1, 0)); // handle with js so it return error
